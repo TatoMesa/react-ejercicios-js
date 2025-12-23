@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import Ejercicio1 from './ejercicios/Ejercicio1';
 import Ejercicio2 from './ejercicios/Ejercicio2';
 import Ejercicio3 from './ejercicios/Ejercicio3';
@@ -36,7 +36,7 @@ const Index = () => (
 function App() {
   
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/Ejercicio1" element={<Ejercicio1 />} />
@@ -48,9 +48,8 @@ function App() {
         <Route path="/Ejercicio7" element={<Ejercicio7 />} />
         <Route path="/Ejercicio8" element={<Ejercicio8 />} />
         <Route path="/Ejercicio9" element={<Ejercicio9 />} />
-        
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
