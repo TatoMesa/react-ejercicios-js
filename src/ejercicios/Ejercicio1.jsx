@@ -31,7 +31,7 @@ export default function Ejercicio1() {
   
   return (
     <Layout 
-      titulo="Ejercicio 1: Cambiar Color"
+      titulo="Ejercicio 1: Cambiar color"
       objetivo="Practicar eventos en JavaScript y manipulación de estilos del DOM."
       descripcion= 'Crea una página web con un botón que diga "Cambiar color". Cada vez que el usuario haga clic en el botón, el color de fondo de la página debe cambiar a un color aleatorio.'>
       <Button onClick={cambiarColor} variant="primary">
