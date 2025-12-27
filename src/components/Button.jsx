@@ -18,10 +18,11 @@ const Button = ({
     opacity: disabled ? 0.6 : 1,
     // Colores dinámicos
     backgroundColor: variant === 'primary' ? '#007bff' : 
-                     variant === 'danger' ? '#dc3545' : 
-                     variant === 'success' ? '#28a745' : '#6c757d',
-    color: 'white',
-  };
+                     variant === 'secondary' ? '#dc3545' : 
+                     variant === 'tertiary' ? '#28a745' : '#e30ef7',
+    color:  '#ffffff' 
+  }
+           
 
   return (
     <button 

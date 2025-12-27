@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Layout from '../components/Layout';
+import Button from '../components/Button';
 
 export default function Ejercicio5 () {
   const [nums, setNums] = useState({ n1: 0, n2: 0 });
@@ -29,10 +30,10 @@ export default function Ejercicio5 () {
       <input type="number" onChange={(e) => setNums({...nums, n1: +e.target.value})} />
       <input type="number" onChange={(e) => setNums({...nums, n2: +e.target.value})} />
       <div>
-        <button onClick={() => calcular('suma')}>Sumar</button>
-        <button onClick={() => calcular('resta')}>Restar</button>
-        <button onClick={() => calcular('multiplicacion')}>Multiplicar</button>
-        <button onClick={() => calcular('division')}>Dividir</button>
+        <Button onClick={() => calcular('suma')} variant='primary'>Sumar</Button>
+        <Button onClick={() => calcular('resta')} variant='secondary'>Restar</Button>
+        <Button onClick={() => calcular('multiplicacion')} variant='tertiary'>Multiplicar</Button>
+        <Button onClick={() => calcular('division')} variant=''>Dividir</Button>
       </div>
       <h3>Resultado: {resultado}</h3>
     </Layout>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Button from './Button';
 
 export default function Layout({ titulo, objetivo, descripcion, instrucciones, children }) {
   return (
@@ -17,9 +18,11 @@ export default function Layout({ titulo, objetivo, descripcion, instrucciones, c
       <main>
         {children} {/* Aquí aparecerá el contenido de cada ejercicio */}
       </main>
-      <Link to="/" style={{ color: 'blue', textDecoration: 'underline' }}>
-         Volver
-      </Link>
+      
+        <Link to="/" >
+          Volver
+        </Link> 
+     
     </div>
   );
 }

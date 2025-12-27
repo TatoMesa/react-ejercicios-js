@@ -16,18 +16,18 @@ const Index = () => (
 
   
   <div style={{ padding: '20px' }}>
-    <h1>Índice de Ejercicios Full Stack</h1>
+    <h1>Índice de Ejercicios realizados en ReactJS</h1>
     <nav>
       <ul>
-        <li><Link to="/Ejercicio1">Ejercicio 1: Color Aleatorio</Link></li>
-        <li><Link to="/Ejercicio2">Ejercicio 2: </Link></li>
-        <li><Link to="/Ejercicio3">Ejercicio 3: </Link></li>
-        <li><Link to="/Ejercicio4">Ejercicio 4: </Link></li>
-        <li><Link to="/Ejercicio5">Ejercicio 5: Calculadora</Link></li>
-        <li><Link to="/Ejercicio6">Ejercicio 6: </Link></li>
-        <li><Link to="/Ejercicio7">Ejercicio 7: </Link></li>
-        <li><Link to="/Ejercicio8">Ejercicio 8: </Link></li>
-        <li><Link to="/Ejercicio9">Ejercicio 9: </Link></li>
+        <li><Link to="/Ejercicio1">Ejercicio 1: Color aleatorio</Link></li>
+        <li><Link to="/Ejercicio2">Ejercicio 2: Contador de clics</Link></li>
+        <li><Link to="/Ejercicio3">Ejercicio 3: Lista dinamica</Link></li>
+        <li><Link to="/Ejercicio4">Ejercicio 4: Filtro de busqueda en tiempo real</Link></li>
+        <li><Link to="/Ejercicio5">Ejercicio 5: Calculadora sencilla</Link></li>
+        <li><Link to="/Ejercicio6">Ejercicio 6: Temporizador con Inicio, pausa y reinicio</Link></li>
+        <li><Link to="/Ejercicio7">Ejercicio 7: Generador de contraseñas aleatorias</Link></li>
+        <li><Link to="/Ejercicio8">Ejercicio 8: Contador de palabras y caracteres</Link></li>
+        <li><Link to="/Ejercicio9">Ejercicio 9: Lista de tareas con LocalStorage</Link></li>
       </ul>
     </nav>
   </div>
