@@ -30,15 +30,16 @@ export default function Ejercicio3() {
         value={texto}
         onChange={e => setTexto(e.target.value)}
         placeholder="Escribí algo..."
+        className='bg-white p-3'
       />
 
       <Button variant="primary" onClick={agregar}>
         Agregar
       </Button>
 
-      <ul>
+      <ul className='max-w-md mx-auto flex flex-col gap-2 '>
         {lista.map((item, index) => (
-          <li key={index}>
+          <li key={index} className='px-2 bg-white flex justify-between items-center w-full'>
             {item}
             <Button variant="secondary" onClick={() => eliminar(index)}>
               Eliminar

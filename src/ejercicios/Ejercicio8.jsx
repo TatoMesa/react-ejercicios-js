@@ -22,10 +22,11 @@ export default function Ejercicio8() {
         placeholder="Escribí un párrafo..."
         value={texto}
         onChange={e => setTexto(e.target.value)}
+        className='bg-white p-2 mt-5 text-2xl w-80'
       />
 
-      <p>Palabras: {palabras.length}</p>
-      <p>Caracteres (sin espacios): {caracteres}</p>  
+      <p className='py-2 text-2xl'>Palabras: {palabras.length}</p>
+      <p className='py-2 text-2xl'>Caracteres (sin espacios): {caracteres}</p>  
     </Layout>
   );
 }

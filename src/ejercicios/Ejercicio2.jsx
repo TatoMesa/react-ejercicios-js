@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import { useState } from 'react';
 import Button from '../components/Button';
+import Titulo from '../components/Titulo';
 export default function Ejercicio2() {
   
   const [contador, setContador] = useState (0);
@@ -21,7 +22,7 @@ export default function Ejercicio2() {
       objetivo="Practicar el manejo de eventos y la actualización del contenido del DOM."
       descripcion='Crea una página con un botón que diga "Contar clics" y un texto inicial que muestre "Clics: 0". Cada vez que se haga clic en el botón, el texto debe actualizarse para mostrar el número total de clics realizados.'
       >
-      <h3>clics: {contador}</h3>  
+      <Titulo>clics: {contador}</Titulo>
       <Button onClick={sumarClic} variant="primary">
           Sumar
       </Button> 

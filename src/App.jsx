@@ -15,19 +15,19 @@ import Ejercicio9 from './ejercicios/Ejercicio9';
 const Index = () => (
 
   
-  <div style={{ padding: '20px' }}>
-    <h1>Índice de Ejercicios realizados en ReactJS</h1>
+  <div className= "flex flex-col items-center gap-2 pt-6 px-6 w-full bg-[#f7df1e] text-[#000000] min-h-screen">
+    <h1 className="font-semibold mb-4 bg-[#000000] text-[#f7df1e] p-5 text-3xl text-center w-full max-w-7xl border border-black">Índice de Ejercicios realizados en ReactJS</h1>
     <nav>
-      <ul>
-        <li><Link to="/Ejercicio1">Ejercicio 1: Color aleatorio</Link></li>
-        <li><Link to="/Ejercicio2">Ejercicio 2: Contador de clics</Link></li>
-        <li><Link to="/Ejercicio3">Ejercicio 3: Lista dinamica</Link></li>
-        <li><Link to="/Ejercicio4">Ejercicio 4: Filtro de busqueda en tiempo real</Link></li>
-        <li><Link to="/Ejercicio5">Ejercicio 5: Calculadora sencilla</Link></li>
-        <li><Link to="/Ejercicio6">Ejercicio 6: Temporizador con Inicio, pausa y reinicio</Link></li>
-        <li><Link to="/Ejercicio7">Ejercicio 7: Generador de contraseñas aleatorias</Link></li>
-        <li><Link to="/Ejercicio8">Ejercicio 8: Contador de palabras y caracteres</Link></li>
-        <li><Link to="/Ejercicio9">Ejercicio 9: Lista de tareas con LocalStorage</Link></li>
+      <ul className="flex flex-col items-center gap-2 pt-6">
+        <li className='p-2 text-2xl'><Link to="/Ejercicio1">Ejercicio 1: Color aleatorio</Link></li>
+        <li className='p-2 text-2xl'><Link to="/Ejercicio2">Ejercicio 2: Contador de clics</Link></li>
+        <li className='p-2 text-2xl'><Link to="/Ejercicio3">Ejercicio 3: Lista dinamica</Link></li>
+        <li className='p-2 text-2xl'><Link to="/Ejercicio4">Ejercicio 4: Filtro de busqueda en tiempo real</Link></li>
+        <li className='p-2 text-2xl'><Link to="/Ejercicio5">Ejercicio 5: Calculadora sencilla</Link></li>
+        <li className='p-2 text-2xl'><Link to="/Ejercicio6">Ejercicio 6: Temporizador con Inicio, pausa y reinicio</Link></li>
+        <li className='p-2 text-2xl'><Link to="/Ejercicio7">Ejercicio 7: Generador de contraseñas aleatorias</Link></li>
+        <li className='p-2 text-2xl'><Link to="/Ejercicio8">Ejercicio 8: Contador de palabras y caracteres</Link></li>
+        <li className='p-2 text-2xl'><Link to="/Ejercicio9">Ejercicio 9: Lista de tareas con LocalStorage</Link></li>
       </ul>
     </nav>
   </div>
@@ -36,6 +36,7 @@ const Index = () => (
 function App() {
   
   return (
+    
     <HashRouter>
       <Routes>
         <Route path="/" element={<Index />} />

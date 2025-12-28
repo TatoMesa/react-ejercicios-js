@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import { useEffect, useState } from "react"
 import Button from '../components/Button';
+import Titulo from '../components/Titulo';
 
 export default function Ejercicio6() {
   const [segundos, setSegundos] = useState(0)
@@ -35,13 +36,12 @@ export default function Ejercicio6() {
       objetivo='Practicar manejo de eventos, funciones de temporización y manipulación del DOM.'
       descripcion='Crea una página con un temporizador que comience en 00:00:00. Incluye tres botones: “Iniciar”, “Pausar” y “Reiniciar”.'
       instrucciones={['Al hacer clic en “Iniciar”, el temporizador debe comenzar a contar los segundos, minutos y horas.','“Pausar” detiene el conteo pero mantiene el tiempo actual.','“Reiniciar” pone el temporizador en 00:00:00.']}>
+      <Titulo>{formatearTiempo()}</Titulo>
       <div>
-      <h2>{formatearTiempo()}</h2>
-
-      <Button onClick={() => setActivo(true)} variant="primary">Iniciar</Button>
-      <Button onClick={() => setActivo(false)} variant="tertiary">Pausar</Button>
-      <Button onClick={() => {setActivo(false); setSegundos(0)}} variant="secondary">Reiniciar</Button>
-    </div>
+        <Button onClick={() => setActivo(true)} variant="primary">Iniciar</Button>
+        <Button onClick={() => setActivo(false)} variant="tertiary">Pausar</Button>
+        <Button onClick={() => {setActivo(false); setSegundos(0)}} variant="secondary">Reiniciar</Button>
+      </div>
     </Layout>
   );
 }

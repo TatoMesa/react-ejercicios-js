@@ -23,10 +23,11 @@ export default function Ejercicio4() {
           type="text"
           placeholder="Buscar..."
           value={busqueda}
-          onChange={e => setBusqueda(e.target.value)}/>
-        <ul>
+          onChange={e => setBusqueda(e.target.value)}
+          className='bg-white p-3 py-2 mt-10 mb-2'/>
+        <ul className='max-w-md mx-auto flex flex-col'>
           {elementosFiltrados.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} className='px-2 bg-white' >{item}</li>
           ))}
         </ul>
       </div>

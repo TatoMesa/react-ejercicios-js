@@ -50,16 +50,20 @@ export default function Ejercicio9() {
         placeholder="Nueva tarea"
         value={texto}
         onChange={e => setTexto(e.target.value)}
+        className='bg-white p-2 mt-5 text-2xl w-80'
       />
       <Button onClick={agregarTarea} variant='tertiary'>Agregar</Button>
 
-      <ul>
+      <ul className='max-w-md mx-auto flex flex-col gap-2 mb-4'>
         {tareas.map(tarea => (
-          <li key={tarea.id}>
+          <li key={tarea.id} className='px-2 py-2
+          
+          bg-white flex gap-2 items-center text-2xl '>
             <input
               type="checkbox"
               checked={tarea.completada}
               onChange={() => toggleTarea(tarea.id)}
+              
             />
             <span
               style={{

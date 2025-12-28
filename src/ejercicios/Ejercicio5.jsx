@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
+import Titulo from '../components/Titulo';
 
 export default function Ejercicio5 () {
   const [nums, setNums] = useState({ n1: 0, n2: 0 });
@@ -27,15 +28,17 @@ export default function Ejercicio5 () {
       instrucciones={["Al hacer clic en cualquiera de los botones, debe mostrarse el resultado de la operación en un área de texto o debajo de los botones",
                       "Asegúrate de validar los datos para evitar errores (como división por cero o entradas vacías)."]}
     >
-      <input type="number" onChange={(e) => setNums({...nums, n1: +e.target.value})} />
-      <input type="number" onChange={(e) => setNums({...nums, n2: +e.target.value})} />
-      <div>
+      <div className='flex gap-2'>
+        <input className='bg-white p-3 py-2 mt-10 mb-2 text-2xl' type="number" onChange={(e) => setNums({...nums, n1: +e.target.value})} placeholder='num1'/>
+        <input className='bg-white p-3 py-2 mt-10 mb-2 text-2xl' type="number" onChange={(e) => setNums({...nums, n2: +e.target.value})} placeholder='num2'/>
+      </div>
+      <div className='flex gap-2 max-w-md mx-auto'>
         <Button onClick={() => calcular('suma')} variant='primary'>Sumar</Button>
         <Button onClick={() => calcular('resta')} variant='secondary'>Restar</Button>
         <Button onClick={() => calcular('multiplicacion')} variant='tertiary'>Multiplicar</Button>
         <Button onClick={() => calcular('division')} variant=''>Dividir</Button>
       </div>
-      <h3>Resultado: {resultado}</h3>
+      <Titulo>Resultado: {resultado}</Titulo>
     </Layout>
   );
 };

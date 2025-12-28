@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import { useState } from "react"
 import Button from '../components/Button';
+import Titulo from '../components/Titulo';
 
 export default function Ejercicio7() {
   const [longitud, setLongitud] = useState("")
@@ -42,6 +43,7 @@ export default function Ejercicio7() {
         placeholder="Longitud de la contraseña"
         value={longitud}
         onChange={e => setLongitud(e.target.value)}
+        className='bg-white p-2 mt-5 text-2xl w-80'
       />
 
       <Button onClick={generarPassword} variant='primary'>Generar contraseña</Button>
@@ -49,8 +51,8 @@ export default function Ejercicio7() {
       {error && <p style={{ color: "red" }}>{error}</p>}
 
       {password && (
-        <p>
-          <strong>Contraseña:</strong> {password}
+        <p className='p-2 mt-5 text-2xl'>
+          <strong className='mt-5 text-2xl'>Contraseña:</strong> {password}
         </p>
       )}
    
