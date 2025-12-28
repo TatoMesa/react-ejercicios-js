@@ -16,7 +16,7 @@ const Index = () => (
 
   
   <div className= "flex flex-col items-center gap-2 pt-6 px-6 w-full bg-[#f7df1e] text-[#000000] min-h-screen">
-    <h1 className="font-semibold mb-4 bg-[#000000] text-[#f7df1e] p-5 text-3xl text-center w-full max-w-7xl border border-black">Índice de Ejercicios realizados en ReactJS estilados con Tailwind</h1>
+    <h1 className="font-semibold mb-4 bg-[#000000] text-[#f7df1e] p-5 text-3xl text-center w-full max-w-7xl border border-black">Índice de Ejercicios realizados en ReactJS</h1>
     <nav>
       <ul className="flex flex-col items-center gap-2 pt-6">
         <li className='p-2 text-2xl'><Link to="/Ejercicio1">Ejercicio 1: Color aleatorio</Link></li>
